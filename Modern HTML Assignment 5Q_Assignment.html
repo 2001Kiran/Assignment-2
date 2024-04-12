@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: aquamarine;">
+    <h3>Tab_Index: </h3>
+    <p>The tabindex attribute in HTML is used to specify the order in which elements receive focus when users navigate through a web page using the keyboard's "Tab" key. By default, elements like links, form controls, and buttons are included in the tab order based on their position in the HTML document's source order. However, the tabindex attribute allows developers to modify this order or include elements that are not normally focusable.</p><br>
+    <p>Here's a brief overview of how the tabindex attribute works:</p>
+    <ol type="a">
+        <li><u><b>Tab Order:</b></u> Elements with a lower tabindex value are visited first when users navigate through the page using the "Tab" key. If multiple elements have the same tabindex value, they are visited in the order they appear in the document's source order.</li><br>
+        <li><u><b>Positive Values:</b></u> Assigning a positive integer value to the tabindex attribute explicitly includes an element in the tab order and specifies its position relative to other focusable elements. Lower positive values indicate an earlier position in the tab order.</li><br>
+        <li><u><b>Zero Value:</b></u> Setting the tabindex attribute to zero (tabindex="0") allows an element to be included in the tab order based on its position in the document's source order. This is useful for elements that are not inherently focusable, such as < div > or < span > elements.</li><br>
+        <li><u><b>Negative Values:</b></u> Assigning a negative integer value to the tabindex attribute (tabindex="-1") removes an element from the default tab order. While the element remains focusable programmatically (e.g., via JavaScript), it is skipped when users navigate through the page using the "Tab" key.</li><br>
+    </ol>
+    <p>It's important to use the tabindex attribute judiciously to ensure a logical and predictable tab order for keyboard users. Overusing or misusing tabindex can lead to confusion and navigation difficulties. Additionally, developers should prioritize the use of semantic HTML elements and native focus behavior whenever possible to enhance accessibility and usability.</p>
+</body>
+</html>

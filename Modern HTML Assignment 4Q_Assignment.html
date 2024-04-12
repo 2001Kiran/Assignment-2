@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(25, 209, 209);"> 
+    <p>3 ways which help us in improving the accessibility of HTML : </p>
+    <ol type="1"> 
+        <li>Semantic HTML Markup:</li><br>
+        <ul>
+            <li>Use semantic HTML elements (such as < header >, < nav >, < main >, < footer >, < section >, < article >, < aside >, etc.) to provide a clear structure and meaning to web content. Semantic markup helps assistive technologies and search engines better understand the purpose and hierarchy of content.</li><br>
+            <li>Use appropriate heading levels (< h1 > to < h6 >) to create a logical outline of the content. Headings should reflect the document's structure, with < h1 > representing the main heading and subsequent headings reflecting subheadings.</li><br>
+            <li>Ensure that form elements are properly labeled using < label > elements and associate them with their corresponding input fields using the for attribute or by nesting the input field within the < label > element. This helps screen reader users understand the purpose of each form control.</li><br>
+        </ul>
+        <li>Providing Alternative Text for Images:</li><br>
+        <ul>
+            <li>Always include descriptive alternative text (alt attribute) for images, graphs, icons, and other non-text content. Alternative text should convey the essential information or function of the image to users who cannot see it, such as blind or low-vision users.
+            </li><br>
+            <li>Use empty alt attributes (alt="") for decorative images that do not convey meaningful content or functionality. This informs screen readers to ignore the image, reducing unnecessary verbosity in the content.</li><br>
+        </ul>
+        <li>Implementing ARIA Roles, States, and Properties: </li><br>
+        <ul>
+            <li>Use Accessible Rich Internet Applications (ARIA) attributes to enhance the accessibility of dynamic and interactive content. ARIA roles, states, and properties help convey additional information to assistive technologies about the purpose, structure, and behavior of web elements.</li><br>
+            <li>Apply appropriate ARIA roles (role attribute) to elements that do not have native semantic meaning but require accessibility support, such as custom widgets, menus, and interactive elements.</li><br>
+            <li>Use ARIA landmarks (e.g., role="banner", role="navigation", role="main", role="contentinfo", etc.) to define regions of the page and improve navigation for screen reader users.</li><br>
+        </ul>
+    </ol>
+    <p>By incorporating these practices into HTML development, web developers can create more accessible and inclusive web experiences for users of all abilities.</p>
+</body>
+</html>
